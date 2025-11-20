@@ -9,13 +9,13 @@ function App() {
   return (
     <>
      <div className="container">
-      <h1>Emoji mood changer </h1>
-      <button className='btn Happy' onClick={()=>{
+      <h1>Emoji Mood Changerrrr of PB7 </h1>
+      <button className='btn happy' onClick={()=>{
         setMood("😁")
       }}>Happpy 😁 </button>
       <button className='btn sad' onClick={()=>{
         setMood("😭")
-      }}>Saddd 😭 </button>
+      }}>Melancholy 😭 </button>
       <button className='btn angry ' onClick={()=>{
         setMood("😡")
       }}>Angryyyy 😡 </button>
