@@ -4,17 +4,27 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [mood,setMood] = useState("😂");
 
   return (
     <>
      <div className="container">
       <h1>Emoji mood changer </h1>
-      <button className='btn Happy'>Happpy 😁 </button>
-      <button className='btn sad'>Saddd 😭 </button>
-      <button className='btn angry '>Angryyyy 😡 </button>
+      <button className='btn Happy' onClick={()=>{
+        setMood("😁")
+      }}>Happpy 😁 </button>
+      <button className='btn sad' onClick={()=>{
+        setMood("😭")
+      }}>Saddd 😭 </button>
+      <button className='btn angry ' onClick={()=>{
+        setMood("😡")
+      }}>Angryyyy 😡 </button>
 
-      <h2 className='moodText'>Current mood - </h2>
+      <button className='reset' onClick={()=>{
+        setMood("😂")
+      }}>Reset</button>
+
+      <h2 className='moodText'>Current mood - {mood} </h2>
      </div>
      
     </>
